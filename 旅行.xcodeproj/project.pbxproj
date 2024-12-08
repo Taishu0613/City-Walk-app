@@ -6,7 +6,20 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		9430A0CB2D056CE500FB3DFE /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9430A0CA2D056CE400FB3DFE /* WidgetKit.framework */; };
+		9430A0CD2D056CE500FB3DFE /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9430A0CC2D056CE500FB3DFE /* SwiftUI.framework */; };
+		9430A0DE2D056CE600FB3DFE /* sampleLive ActivityExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 9430A0C82D056CE400FB3DFE /* sampleLive ActivityExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
+		9430A0DC2D056CE600FB3DFE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 944902002D04952D0085CE76 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9430A0C72D056CE400FB3DFE;
+			remoteInfo = "sampleLive ActivityExtension";
+		};
 		944902192D04952E0085CE76 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 944902002D04952D0085CE76 /* Project object */;
@@ -23,13 +36,48 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9430A0DF2D056CE600FB3DFE /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				9430A0DE2D056CE600FB3DFE /* sampleLive ActivityExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		9430A0C82D056CE400FB3DFE /* sampleLive ActivityExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "sampleLive ActivityExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9430A0CA2D056CE400FB3DFE /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		9430A0CC2D056CE500FB3DFE /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		944902082D04952D0085CE76 /* 旅行.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "旅行.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		944902182D04952E0085CE76 /* 旅行Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "旅行Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		944902222D04952E0085CE76 /* 旅行UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "旅行UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		9430A0E22D056CE600FB3DFE /* Exceptions for "sampleLive Activity" folder in "sampleLive ActivityExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 9430A0C72D056CE400FB3DFE /* sampleLive ActivityExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		9430A0CE2D056CE500FB3DFE /* sampleLive Activity */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				9430A0E22D056CE600FB3DFE /* Exceptions for "sampleLive Activity" folder in "sampleLive ActivityExtension" target */,
+			);
+			path = "sampleLive Activity";
+			sourceTree = "<group>";
+		};
 		9449020A2D04952D0085CE76 /* 旅行 */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "旅行";
@@ -48,6 +96,15 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9430A0C52D056CE400FB3DFE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9430A0CD2D056CE500FB3DFE /* SwiftUI.framework in Frameworks */,
+				9430A0CB2D056CE500FB3DFE /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		944902052D04952D0085CE76 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -72,12 +129,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9430A0C92D056CE400FB3DFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9430A0CA2D056CE400FB3DFE /* WidgetKit.framework */,
+				9430A0CC2D056CE500FB3DFE /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		944901FF2D04952D0085CE76 = {
 			isa = PBXGroup;
 			children = (
 				9449020A2D04952D0085CE76 /* 旅行 */,
 				9449021B2D04952E0085CE76 /* 旅行Tests */,
 				944902252D04952E0085CE76 /* 旅行UITests */,
+				9430A0CE2D056CE500FB3DFE /* sampleLive Activity */,
+				9430A0C92D056CE400FB3DFE /* Frameworks */,
 				944902092D04952D0085CE76 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +156,7 @@
 				944902082D04952D0085CE76 /* 旅行.app */,
 				944902182D04952E0085CE76 /* 旅行Tests.xctest */,
 				944902222D04952E0085CE76 /* 旅行UITests.xctest */,
+				9430A0C82D056CE400FB3DFE /* sampleLive ActivityExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +164,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		9430A0C72D056CE400FB3DFE /* sampleLive ActivityExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9430A0E32D056CE600FB3DFE /* Build configuration list for PBXNativeTarget "sampleLive ActivityExtension" */;
+			buildPhases = (
+				9430A0C42D056CE400FB3DFE /* Sources */,
+				9430A0C52D056CE400FB3DFE /* Frameworks */,
+				9430A0C62D056CE400FB3DFE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				9430A0CE2D056CE500FB3DFE /* sampleLive Activity */,
+			);
+			name = "sampleLive ActivityExtension";
+			packageProductDependencies = (
+			);
+			productName = "sampleLive ActivityExtension";
+			productReference = 9430A0C82D056CE400FB3DFE /* sampleLive ActivityExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		944902072D04952D0085CE76 /* 旅行 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9449022C2D04952E0085CE76 /* Build configuration list for PBXNativeTarget "旅行" */;
@@ -102,10 +193,12 @@
 				944902042D04952D0085CE76 /* Sources */,
 				944902052D04952D0085CE76 /* Frameworks */,
 				944902062D04952D0085CE76 /* Resources */,
+				9430A0DF2D056CE600FB3DFE /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				9430A0DD2D056CE600FB3DFE /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				9449020A2D04952D0085CE76 /* 旅行 */,
@@ -173,6 +266,9 @@
 				LastSwiftUpdateCheck = 1610;
 				LastUpgradeCheck = 1610;
 				TargetAttributes = {
+					9430A0C72D056CE400FB3DFE = {
+						CreatedOnToolsVersion = 16.1;
+					};
 					944902072D04952D0085CE76 = {
 						CreatedOnToolsVersion = 16.1;
 					};
@@ -203,11 +299,19 @@
 				944902072D04952D0085CE76 /* 旅行 */,
 				944902172D04952E0085CE76 /* 旅行Tests */,
 				944902212D04952E0085CE76 /* 旅行UITests */,
+				9430A0C72D056CE400FB3DFE /* sampleLive ActivityExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9430A0C62D056CE400FB3DFE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		944902062D04952D0085CE76 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +336,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9430A0C42D056CE400FB3DFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		944902042D04952D0085CE76 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +367,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		9430A0DD2D056CE600FB3DFE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9430A0C72D056CE400FB3DFE /* sampleLive ActivityExtension */;
+			targetProxy = 9430A0DC2D056CE600FB3DFE /* PBXContainerItemProxy */;
+		};
 		9449021A2D04952E0085CE76 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 944902072D04952D0085CE76 /* 旅行 */;
@@ -269,6 +385,58 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		9430A0E02D056CE600FB3DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sampleLive Activity/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "sampleLive Activity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wakasugi.--.sampleLive-Activity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9430A0E12D056CE600FB3DFE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "sampleLive Activity/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "sampleLive Activity";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "wakasugi.--.sampleLive-Activity";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		9449022A2D04952E0085CE76 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -398,6 +566,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"旅行/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "---Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "位置情報が欲しいです";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報が欲しいです";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -426,6 +598,10 @@
 				DEVELOPMENT_ASSET_PATHS = "\"旅行/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "---Info.plist";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "位置情報が欲しいです";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "位置情報が欲しいです";
+				INFOPLIST_KEY_NSSupportsLiveActivities = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -515,6 +691,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9430A0E32D056CE600FB3DFE /* Build configuration list for PBXNativeTarget "sampleLive ActivityExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9430A0E02D056CE600FB3DFE /* Debug */,
+				9430A0E12D056CE600FB3DFE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		944902032D04952D0085CE76 /* Build configuration list for PBXProject "旅行" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
